@@ -1,0 +1,87 @@
+.app {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  padding: 24px 0;
+}
+
+.main {
+  flex: 1;
+  padding: 0 24px 32px;
+}
+
+.toggle-button {
+  font: inherit;
+  padding: 10px 18px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--accent-bg);
+  color: var(--text-h);
+  cursor: pointer;
+  margin-bottom: 24px;
+}
+
+.toggle-button:hover {
+  border-color: var(--accent-border);
+}
+
+.product-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.product-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px 20px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  text-align: left;
+}
+
+.product-card-info h2 {
+  margin: 0 0 4px;
+}
+
+.product-price {
+  color: var(--text);
+  font-size: 15px;
+}
+
+.badge {
+  font-size: 13px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.badge-in-stock {
+  color: #1a7f37;
+  background: rgba(26, 127, 55, 0.12);
+}
+
+.badge-out-stock {
+  color: #cf222e;
+  background: rgba(207, 34, 46, 0.12);
+}
+
+.empty-message {
+  padding: 24px;
+  text-align: center;
+}
+
+.footer {
+  padding: 16px 0;
+  border-top: 1px solid var(--border);
+  font-size: 14px;
+}
